@@ -6,7 +6,7 @@ function validateForm(f1){
     let nome = document.getElementById(f1).nome.value;
     let cognome = document.getElementById(f1).cognome.value;
     let email = document.getElementById(f1).email.value;
-    let textArea = document.getElementById(f1).textArea.value;
+    let textArea = document.getElementById(f1).message.value;
     if (nome != "" && cognome != "" && email != "" && textArea != ""){
         console.log("valori inseriti correttamente, necessario solo controllare che l'email rispetti lo stile");
         let regexp_email = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;

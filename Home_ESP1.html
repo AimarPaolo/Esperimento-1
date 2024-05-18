@@ -5,16 +5,16 @@
         <title>Interfaccia Utente ESP1</title>
         <meta name="author" content="Paolo Aimar">
         <link rel="stylesheet" href="modifica_stile.css">
-        <script type="application/javascript" src="Home_ESP1.js"></script>
+        <script src="Home_ESP1.js"></script>
     </head>
     <body>
         <div class="contenitore">
             <h1>Inserisci i dati per effettuare il login</h1>
-            <form action="Home_ESP1.php" id="contactForm" name="contactForm" method="get" onsubmit="return validateForm();">
+            <form action="Home_ESP1.php" id="contactForm" name="contactForm" method="get" onsubmit="return validateForm('contactForm');">
                 <p>
                     <!--anche se inserisco required nei campi di input, prima di consegnare il form controllo effettivamente che siano stati compilati
                     i campi del form per esser sicuro che non ci siano dei problemi relativi al server-->
-                    <label for="name">nome:</label>
+                    <label for="nome">nome:</label>
                     <input type="text" id="nome" name="nome" placeholder="Inserisci il nome" required>
                 </p>
                 <!--Inserisco nel form un campo per ricevere il nome, il cognome, la mail e un messaggio che si vuole inviare al server-->
